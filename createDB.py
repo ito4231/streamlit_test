@@ -13,6 +13,7 @@ df = pd.DataFrame(data)
 df
 #%%
 combined_df = pd.concat([df, df], ignore_index=True)
+combined_df = pd.concat([df, df,df,df], ignore_index=True)
 combined_df
 #%%
 df = combined_df
