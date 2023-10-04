@@ -11,7 +11,11 @@ data = {
 df = pd.DataFrame(data)
 
 df
-
+#%%
+combined_df = pd.concat([df, df], ignore_index=True)
+combined_df
+#%%
+df = combined_df
 # %%
 import sqlite3
 with sqlite3.connect("test.db") as conn:
